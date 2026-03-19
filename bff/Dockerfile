@@ -11,6 +11,7 @@ COPY codegen.ts ./
 RUN npm ci
 
 COPY bff/ ./bff/
+COPY ui/src/graphql/ ./ui/src/graphql/
 
 RUN npm run codegen
 RUN npm run build --workspace=bff
