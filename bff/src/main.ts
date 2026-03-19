@@ -6,6 +6,8 @@ async function bootstrap() {
 
   app.enableCors({
     origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Apollo-Require-Preflight"],
   });
 
   await app.listen(process.env.PORT || 4000);
