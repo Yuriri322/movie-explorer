@@ -1,0 +1,25 @@
+type Query {
+  searchMulti(query: String!, page: Int): SearchResult!
+}
+
+type SearchResult {
+  page: Int!
+  totalPages: Int!
+  totalResults: Int!
+  results: [MediaItem!]!
+}
+
+type MediaItem {
+  id: Int!
+  title: String!
+  mediaType: MediaType!
+  posterPath: String
+  releaseDate: String
+  voteAverage: Float
+  overview: String
+}
+
+enum MediaType {
+  MOVIE
+  TV
+}

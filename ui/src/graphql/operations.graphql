@@ -1,0 +1,16 @@
+query SearchMulti($query: String!, $page: Int) {
+  searchMulti(query: $query, page: $page) {
+    page
+    totalPages
+    totalResults
+    results {
+      id
+      title
+      mediaType
+      posterPath
+      releaseDate
+      voteAverage
+      overview
+    }
+  }
+}

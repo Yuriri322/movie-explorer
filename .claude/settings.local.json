@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(git init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npx nest:*)",
+      "Bash(npx tsc:*)",
+      "Bash(curl -s http://localhost:4000/graphql -H \"Content-Type: application/json\" -d '{\"\"\"\"query\"\"\"\":\"\"\"\"{ searchMulti\\(query: \\\\\"\"\"\"matrix\\\\\"\"\"\"\\) { totalResults results { id title mediaType posterPath releaseDate voteAverage } } }\"\"\"\"}')",
+      "Bash(node -e \"require.resolve\\(''@as-integrations/express5''\\)\")",
+      "Bash(node -e \"require.resolve\\(''@as-integrations/express5'', { paths: [''/Users/dmitriylogachov/test-task/bff''] }\\)\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/watchlist)",
+      "Bash(curl -s -X POST http://localhost:4000/graphql -H \"Content-Type: application/json\" -H \"Origin: http://localhost:3000\" -d '{\"\"\"\"query\"\"\"\":\"\"\"\"{ searchMulti\\(query: \\\\\"\"\"\"inception\\\\\"\"\"\"\\) { totalResults results { id title mediaType voteAverage releaseDate posterPath } } }\"\"\"\"}')",
+      "Bash(python3 -m json.tool)",
+      "Bash(mkdir -p /tmp/archive-review)",
+      "Bash(unzip -o \"/Users/dmitriylogachov/Downloads/Telegram Desktop/Archive.zip\" -d /tmp/archive-review)",
+      "Bash(lsof -ti:4000)",
+      "Bash(xargs kill:*)",
+      "Bash(lsof -ti:3000)",
+      "Bash(curl -s -X POST http://localhost:4000/graphql -H \"Content-Type: application/json\" -d '{\"\"\"\"query\"\"\"\":\"\"\"\"{ search\\(query: \\\\\"\"\"\"Inception\\\\\"\"\"\"\\) { results { id title mediaType } } }\"\"\"\"}')",
+      "Bash(kill 96436)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -X POST http://localhost:4000/graphql -H \"Content-Type: application/json\" -d '{\"\"query\"\":\"\"{ search\\(query: \\\\\"\"Inception\\\\\"\"\\) { results { id title mediaType } } }\"\"}')",
+      "Bash(curl -s -X POST http://localhost:4000/graphql -H \"Content-Type: application/json\" -d '{\"\"query\"\":\"\"query SearchMulti\\($query: String!\\) { searchMulti\\(query: $query\\) { page totalResults results { id title mediaType } } }\"\", \"\"variables\"\": {\"\"query\"\": \"\"Inception\"\"}}')",
+      "Bash(curl -s -X POST http://localhost:4000/graphql -H \"Content-Type: application/json\" -d '{\"\"query\"\":\"\"query { searchMulti\\(query: \\\\\"\"Inception\\\\\"\"\\) { page totalResults results { id title mediaType } } }\"\"}')"
+    ]
+  }
+}
